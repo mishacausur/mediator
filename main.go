@@ -6,8 +6,10 @@ package main
 #include "mediator.h"
 */
 
-import "C"
-import "fmt"
+import (
+	"C"
+	"fmt"
+)
 
 func main() {
 	a, b := 1, 10
