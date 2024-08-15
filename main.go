@@ -2,7 +2,7 @@ package main
 
 /*
 #cgo  CXXFLAGS: -std=c++11
-#cgo LDFLAGS: -lstdc++
+#cgo LDFLAGS: -L. -lmediator -lstdc++
 #include "mediator.h"
 */
 
