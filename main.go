@@ -1,10 +1,6 @@
 package main
 
-/*
-#cgo  CXXFLAGS: -std=c++11
-#cgo LDFLAGS: -L. -lmediator -lstdc++
-#include "mediator.h"
-*/
+//#include "wrap_sum.hxx"
 
 import (
 	"C"
@@ -13,6 +9,6 @@ import (
 
 func main() {
 	a, b := 1, 10
-	result := C.add(C.int(a), C.int(b))
+	result := C.add_from_cplus(C.int(a), C.int(b))
 	fmt.Println("result: ", int(result))
 }
